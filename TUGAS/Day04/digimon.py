@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-url = "http://127.0.0.1:5500/Coding/DATAVIZ/TUGAS/Day%204/digimon1.html"
+url = "http://digidb.io/digimon-list/"
 web = requests.get(url)
 data = BeautifulSoup(web.content, "html.parser")
 png = []
