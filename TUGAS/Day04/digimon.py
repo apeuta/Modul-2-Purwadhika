@@ -3,22 +3,8 @@ from bs4 import BeautifulSoup
 url = "http://digidb.io/digimon-list/"
 web = requests.get(url)
 data = BeautifulSoup(web.content, "html.parser")
-png = []
-digi = []
-stage = []
-pool = []
-pool2 = []
-jenis = []
-att = []
-memo = []
-equ = []
-hp = []
-sp = []
-atk = []
-dfc = []
-intl = []
-spd = []
-gabung = []
+png = []; digi = []; stage = []; pool = []; pool2 = []; jenis = []
+att = []; memo = []; equ = []; hp = []; sp = []; atk = []; dfc = []; intl = []; spd = []; gabung = []
 num = list (range(1,342))
 for i in data.find_all('td', width="21%"):
     png.append(i.get('src'))
