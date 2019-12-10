@@ -3,7 +3,7 @@ db = mysql.connector.connect(
     host = "localhost",
     port = 3306,
     user = "root",
-    passwd = "Apeuta42",
+    passwd = "12345",
     database = "ptABC"
 )
 c = db.cursor()
