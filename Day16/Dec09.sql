@@ -14,4 +14,5 @@ insert into employees (nama, email) values
 ("Bagas", "bagasadi@yahoo.id"),
 ("Evan", "evandd@yahoo.id"),
 ("Osvaldo", "osvaldo@yahoo.id");
-select * from employees;
+select * from employees;	
+show tables;
